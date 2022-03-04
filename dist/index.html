@@ -68,7 +68,7 @@ Frameworks: Bootstrap 5 -->
                     </p>
                     <button class="btn btn-outline-warning btn-lg mb-4" type="button" data-bs-toggle="modal" data-bs-target="#enroll">Start Enroll</button>
                 </div>
-                <img class="img-fluid w-50" src="../dist/img/productivity-showcase.svg" alt="showcase for developement">
+                <img class="img-fluid w-50" src="img/productivity-showcase.svg" alt="showcase for developement">
             </div>
         </div>
     </section>
@@ -143,7 +143,7 @@ Frameworks: Bootstrap 5 -->
         <div class="container mt-3">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-7">
-                  <img id="fundamentals" class="img-fluid" src="../dist/img/prog-lang-team.svg" alt="Fundamentals">
+                  <img id="fundamentals" class="img-fluid" src="img/prog-lang-team.svg" alt="Fundamentals">
              </div>
                 <div class="col-md-5 p-4">
                     <h3 class="display-6">Learn The Fundamentals</h3>
@@ -177,7 +177,7 @@ Frameworks: Bootstrap 5 -->
                 </div>
 
                 <div class="col-md-7">
-                    <img id="react-img" class="img-fluid" src="../dist/img/undraw_react.svg" alt="Fundamentals">
+                    <img id="react-img" class="img-fluid" src="img/undraw_react.svg" alt="Fundamentals">
                </div>
             </div>
         </div>
@@ -368,7 +368,7 @@ Frameworks: Bootstrap 5 -->
         </div>
         <div class="modal-body">
             <p class="lead text-center mb-3">Complete the form below. We'll be in touch</p>
-          <form>
+          <form method="post" data-netlify="true" data-netlify-recaptcha="true">
               <div class="mb-3">
                 <input type="text" name="firstname" class="form-control" placeholder="First name">
               </div>
@@ -380,6 +380,7 @@ Frameworks: Bootstrap 5 -->
            <div class="mb-3">
             <input type="email" name="email" class="form-control" placeholder="email: eg joebr@example.com">
            </div>
+           <div data-netlify-recaptcha="true"></div>
           </form>
         </div>
         <div class="modal-footer">
